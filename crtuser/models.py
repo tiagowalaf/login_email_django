@@ -11,4 +11,5 @@ class CustomUser(AbstractUser):
 # mas não precisa inserir o USERNAME_FIELD ou password pois
 # estes campos sempre serão usados.
 
+# AbstracUser já possui um envio de email configurado caso queira usar.
 # Com esta alteração podemos logar nosso usuário com email.
