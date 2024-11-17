@@ -1,0 +1,13 @@
+{% extends "global.html" %}
+
+{% block title %}Register{% endblock title %}
+
+{% block content %}
+    <form action="{% url "create:validate_crt" %}" method="post">
+        {%csrf_token%}
+        email: {{form.email}}
+        name: {{form.username}}
+        password: {{form.password}}
+        <button type="submit">send</button>
+    </form>
+{% endblock content %}
